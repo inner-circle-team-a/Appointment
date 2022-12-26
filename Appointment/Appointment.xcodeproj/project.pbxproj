@@ -19,6 +19,14 @@
 		EF262B7129594C250092F02C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B7029594C250092F02C /* App.swift */; };
 		EF262B7729594FEC0092F02C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B7629594FEC0092F02C /* TabBarItem.swift */; };
 		EF262B79295959250092F02C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B78295959250092F02C /* TabBarController.swift */; };
+		EF262B842959BE240092F02C /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EF262B832959BE240092F02C /* Lottie */; };
+		EF262B872959BE2E0092F02C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EF262B862959BE2E0092F02C /* Kingfisher */; };
+		EF262B8B2959C1350092F02C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B8A2959C1350092F02C /* Network.swift */; };
+		EF262B8E2959C6F50092F02C /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EF262B8D2959C6F50092F02C /* RxCocoa */; };
+		EF262B902959C6F50092F02C /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EF262B8F2959C6F50092F02C /* RxRelay */; };
+		EF262B922959C6F50092F02C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EF262B912959C6F50092F02C /* RxSwift */; };
+		EF262B942959C6F50092F02C /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = EF262B932959C6F50092F02C /* RxTest */; };
+		EF262B982959CAF60092F02C /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B972959CAF60092F02C /* Sample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,8 @@
 		EF262B7029594C250092F02C /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		EF262B7629594FEC0092F02C /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		EF262B78295959250092F02C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EF262B8A2959C1350092F02C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		EF262B972959CAF60092F02C /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF262B8E2959C6F50092F02C /* RxCocoa in Frameworks */,
+				EF262B872959BE2E0092F02C /* Kingfisher in Frameworks */,
+				EF262B922959C6F50092F02C /* RxSwift in Frameworks */,
+				EF262B902959C6F50092F02C /* RxRelay in Frameworks */,
+				EF262B942959C6F50092F02C /* RxTest in Frameworks */,
+				EF262B842959BE240092F02C /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +121,7 @@
 		EF262B3C295948DB0092F02C /* Appointment */ = {
 			isa = PBXGroup;
 			children = (
+				EF262B952959CAE40092F02C /* Repositories */,
 				EF262B6D29594B5D0092F02C /* Core */,
 				EF262B7429594E7A0092F02C /* Resource */,
 				EF262B7229594E550092F02C /* Scene */,
@@ -136,6 +153,7 @@
 			children = (
 				EF262B6F29594BBA0092F02C /* App */,
 				EF262B6E29594BA50092F02C /* AppDelegate */,
+				EF262B892959C0EB0092F02C /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -192,6 +210,30 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		EF262B892959C0EB0092F02C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EF262B8A2959C1350092F02C /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EF262B952959CAE40092F02C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EF262B962959CAEF0092F02C /* Sample */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EF262B962959CAEF0092F02C /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				EF262B972959CAF60092F02C /* Sample.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +250,14 @@
 			dependencies = (
 			);
 			name = Appointment;
+			packageProductDependencies = (
+				EF262B832959BE240092F02C /* Lottie */,
+				EF262B862959BE2E0092F02C /* Kingfisher */,
+				EF262B8D2959C6F50092F02C /* RxCocoa */,
+				EF262B8F2959C6F50092F02C /* RxRelay */,
+				EF262B912959C6F50092F02C /* RxSwift */,
+				EF262B932959C6F50092F02C /* RxTest */,
+			);
 			productName = Appointment;
 			productReference = EF262B3A295948DB0092F02C /* Appointment.app */;
 			productType = "com.apple.product-type.application";
@@ -280,6 +330,11 @@
 				Base,
 			);
 			mainGroup = EF262B31295948DB0092F02C;
+			packageReferences = (
+				EF262B822959BE240092F02C /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				EF262B852959BE2E0092F02C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				EF262B8C2959C6F50092F02C /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = EF262B3B295948DB0092F02C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -324,10 +379,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF262B42295948DB0092F02C /* SplashViewController.swift in Sources */,
+				EF262B982959CAF60092F02C /* Sample.swift in Sources */,
 				EF262B7129594C250092F02C /* App.swift in Sources */,
 				EF262B7729594FEC0092F02C /* TabBarItem.swift in Sources */,
 				EF262B79295959250092F02C /* TabBarController.swift in Sources */,
 				EF262B3E295948DB0092F02C /* AppDelegate.swift in Sources */,
+				EF262B8B2959C1350092F02C /* Network.swift in Sources */,
 				EF262B40295948DB0092F02C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +477,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -480,6 +538,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -670,6 +729,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EF262B822959BE240092F02C /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		EF262B852959BE2E0092F02C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		EF262B8C2959C6F50092F02C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF262B832959BE240092F02C /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF262B822959BE240092F02C /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		EF262B862959BE2E0092F02C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF262B852959BE2E0092F02C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		EF262B8D2959C6F50092F02C /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF262B8C2959C6F50092F02C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EF262B8F2959C6F50092F02C /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF262B8C2959C6F50092F02C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		EF262B912959C6F50092F02C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF262B8C2959C6F50092F02C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		EF262B932959C6F50092F02C /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF262B8C2959C6F50092F02C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF262B32295948DB0092F02C /* Project object */;
 }
