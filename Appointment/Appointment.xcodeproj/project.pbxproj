@@ -19,6 +19,7 @@
 		EF262B7129594C250092F02C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B7029594C250092F02C /* App.swift */; };
 		EF262B7729594FEC0092F02C /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B7629594FEC0092F02C /* TabBarItem.swift */; };
 		EF262B79295959250092F02C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262B78295959250092F02C /* TabBarController.swift */; };
+		EF4F0AF4295B0B96001F7498 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4F0AF3295B0B96001F7498 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		EF262B7029594C250092F02C /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		EF262B7629594FEC0092F02C /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		EF262B78295959250092F02C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EF4F0AF3295B0B96001F7498 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		EF262B3C295948DB0092F02C /* Appointment */ = {
 			isa = PBXGroup;
 			children = (
+				EF4F0AF0295B0B78001F7498 /* Utils */,
 				EF262B6D29594B5D0092F02C /* Core */,
 				EF262B7429594E7A0092F02C /* Resource */,
 				EF262B7229594E550092F02C /* Scene */,
@@ -190,6 +193,30 @@
 				EF262B78295959250092F02C /* TabBarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EF4F0AF0295B0B78001F7498 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF4F0AF1295B0B83001F7498 /* Managers */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF4F0AF1295B0B83001F7498 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EF4F0AF2295B0B8A001F7498 /* Location */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		EF4F0AF2295B0B8A001F7498 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				EF4F0AF3295B0B96001F7498 /* LocationManager.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +353,7 @@
 				EF262B42295948DB0092F02C /* SplashViewController.swift in Sources */,
 				EF262B7129594C250092F02C /* App.swift in Sources */,
 				EF262B7729594FEC0092F02C /* TabBarItem.swift in Sources */,
+				EF4F0AF4295B0B96001F7498 /* LocationManager.swift in Sources */,
 				EF262B79295959250092F02C /* TabBarController.swift in Sources */,
 				EF262B3E295948DB0092F02C /* AppDelegate.swift in Sources */,
 				EF262B40295948DB0092F02C /* SceneDelegate.swift in Sources */,
